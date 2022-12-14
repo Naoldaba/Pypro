@@ -469,7 +469,7 @@ def man(x):
                 return -res
             return 0
     return 0
-print(man(2147483647))"""
+print(man(2147483647))
 
 #addTwolists in reverse order
 def lists(l1,l2):
@@ -489,6 +489,32 @@ def lists(l1,l2):
     resl=list(map(int,resl))
     return resl
 print(lists([9,9,9,9,9,9,9],[9,9,9,9]))
+
+#atoi
+
+def maVU(s):
+    new=""
+    dig="0123456789"
+    for j in s:
+        if j==" ":
+            continue
+        elif j=="-" or j=="+":
+            if j not in new:
+                new+=j
+            else:
+                continue
+        elif j in dig:
+            new+=j
+        else:
+            continue
+    new=int(new)
+    if -2**31<new<2**31-1:
+        return new
+print(maVU("00042"))"""
+
+#RegularExpressionMatching
+
+
 
 
 
